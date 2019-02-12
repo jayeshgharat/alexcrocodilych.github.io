@@ -1,4 +1,11 @@
-@import url(//db.onlinewebfonts.com/c/8307429cc5ad964a4a8d4c49b3065376?family=Karate);
+@font-face {
+    font-family: 'Karate';
+    src: url('../fonts/Karate/Karate.woff') format('woff'),
+    url('../fonts/Karate/Karate.woff2') format('woff2'),
+    url('../fonts/Karate/Karate.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
 /*   My normalize   */
 
