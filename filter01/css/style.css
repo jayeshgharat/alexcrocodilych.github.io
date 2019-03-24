@@ -447,64 +447,57 @@ section {
     padding: 4rem;
     display: flex;
     justify-content: space-between;
-    background: #d5fff5 url(../images/banner-bg16.png) 50% 50% / cover no-repeat;
-/*    align-items: center;*/
+    background: #fff;
+    overflow: hidden;
+    position: relative;
 }
 
 .banner__saving {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.banner__saving_top {
-    font: 700 4.21rem / 1 'Montserrat', sans-serif;
+    font: 400 5.85rem / 1 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: #2185c5;
-    -webkit-filter: drop-shadow(.025em .025em .025em rgba(0, 0, 0, 0.15));
+    color: #32497c;
+    color: #fff;
+    z-index: 2;
+/*    -webkit-filter: drop-shadow(.025em .025em .025em rgba(0, 0, 0, 0.15));*/
 }
 
+.banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5rem;
+    height: 100%;
+    width: 75%;
+    background: linear-gradient(to right, #2185c5, #32497c);
+    transform: skewX(-15deg)
+}
 
-.banner__saving_bottom {
-    font: 400 2.5rem / 1 'Montserrat', sans-serif;
-    color: #32497c;
-    -webkit-filter: drop-shadow(.025em .025em .025em rgba(0, 0, 0, 0.15));
+.banner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5rem;
+    height: 100%;
+    width: 50rem;
+    background: linear-gradient(to right, #FFA500, #FF6F00);
+    transform: skewX(-15deg)
 }
 
 .banner__discount {
-    font: 400 10rem / .75 'Righteous', cursive;
-    text-transform: uppercase;
-    color: #32497c;
-    -webkit-filter: drop-shadow(.025em .025em .025em rgba(0, 0, 0, 0.15));
-}
-
-.banner__ends {
+    z-index: 2;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    -webkit-filter: drop-shadow(.025em .025em .025em rgba(0, 0, 0, 0.15));
-}
-
-.banner__ends_top {
-    font: 400 3rem / 1 'Montserrat', sans-serif;
-    color: #32497c;
-    -webkit-filter: drop-shadow(.025em .025em .025em rgba(0, 0, 0, 0.15));
-    
-}
-
-.banner__ends_bottom {
-    font: 700 3.2rem / 1 'Montserrat', sans-serif;
+    align-items: center;
+    font: 400 6.5rem / .75 'Righteous', cursive;
     text-transform: uppercase;
-    color: #2185c5;
-    -webkit-filter: drop-shadow(.025em .025em .025em rgba(0, 0, 0, 0.15));
-    
+    color: #fff;
 }
 
 .find-form {
     display: flex;
     flex-direction: column;
     padding: 4rem;
-    background: #2185c5;
+    
+    background: #32497c;
     box-shadow: 0 0.5rem 2rem 0 rgba(0,0,0,0.1);
     margin-top: 2rem;
 }
@@ -691,12 +684,16 @@ section {
     position: relative;
 }
 
+.main__list_item:first-of-type {
+    background: #2185c5;
+}
+
 .main__list_item:not(:first-of-type) {
     margin-top: 2rem;
 }
 
 .main__list_h2 {
-    color: #32497c;
+    color: #fff;
     font: 400 4rem / .75 'Righteous', cursive;
     text-transform: uppercase;
     text-align: center;
