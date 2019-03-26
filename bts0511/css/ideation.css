@@ -1,0 +1,251 @@
+/*      Ideation Page      */
+
+.h3-headline {
+    font: 400 4.985rem / 1 'Good Times', sans-serif;
+    color: #fff;
+    margin-top: 1rem;
+    background: url(../images/gold02.png) 50% 50% / cover no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 2rem;
+}
+
+.home__bg {
+    background: url(../images/ideation-bg.png) 50% 50% / cover no-repeat;
+}
+
+
+.home__container {
+    height: 50%;
+    justify-content: center;
+}
+
+.home__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.home__list_link {
+    display: flex;
+    align-items: center;
+    
+    color: #fff;
+    white-space: nowrap;
+}
+
+.home__list_button {
+    height: 4rem;
+    width: 4rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 400 2rem / 1 'Montserrat', sans-serif;
+    margin-right: 2rem;
+    border-width: .3rem;
+}
+
+.home__list_button .button__text {
+    font: 600 3rem / 1 'Montserrat', sans-serif;
+}
+
+
+
+.home__list_text {
+    transition: all .3s ease-out;
+    font: 400 3rem / 1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.home__list_link:hover .home__list_text {
+    color: #D9B854;
+}
+
+.home__list_link:hover .button:after {
+    opacity: 1;
+}
+
+.home__list_link:hover .button__text {
+     background: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.home__bg_video {
+    filter: grayscale(100)brightness(50%)contrast(130%);
+}
+
+.ideation-page__trading {
+    background: #fff;
+}
+
+.ideation-page__trading_container {
+    justify-content: space-between;
+}
+
+.ideation-page__trading_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: calc(100% / 2 - 3rem);
+}
+
+.ideation-page__trading_item {
+    height: calc(100% / 3 - 1.33rem);
+    width: calc(100% / 2 - 1rem);
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    justify-content: center;
+}
+
+.ideation-page__trading_item:nth-of-type(1) {
+    background: url(../images/gold11.png) 50% 50% / cover no-repeat;
+}
+
+.ideation-page__trading_item:nth-of-type(2) {
+    background: url(../images/gold12.png) 50% 50% / cover no-repeat;
+}
+
+.ideation-page__trading_item:nth-of-type(3) {
+    background: url(../images/gold12.png) 50% 50% / cover no-repeat;
+}
+
+.ideation-page__trading_item:nth-of-type(4) {
+    background: url(../images/gold11.png) 50% 50% / cover no-repeat;
+}
+
+.ideation-page__trading_item:nth-of-type(5) {
+    background: url(../images/gold11.png) 50% 50% / cover no-repeat;
+}
+
+.ideation-page__trading_item:nth-of-type(6) {
+    background: url(../images/gold12.png) 50% 50% / cover no-repeat;
+}
+
+.ideation-page__trading_h4 {
+    font: 700 10rem / 1 'Montserrat', sans-serif;
+}
+
+.ideation-page__trading_h5 {
+    font: 700 3rem / 1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
+
+.ideation-page__trading_p {
+    font: 400 1.5rem / 1.4 'Montserrat', sans-serif;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.ideation-page__envision {
+    background: #272727 url(../images/home-bg01.png) 50% 50% / cover no-repeat;
+}
+
+.ideation-page__envision_container {
+    justify-content: space-between;
+}
+
+.ideation-page__design_h4 {
+    font: 700 2.4rem / 1.2 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ideation-page__design {
+    background: #fff;
+}
+
+.ideation-page__design_container {
+    justify-content: space-between;
+}
+
+.ideation-page__developments {
+    background: #272727 url(../images/hedge-fund-bg.png) 50% 50% / cover no-repeat;
+}
+
+.numbers__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    width: calc(50% - 3rem);
+}
+
+.numbers__list_item {
+    height: calc(100% / 3 - 1.33rem);
+    background: url(../images/gold02.png) 50% 50% / cover no-repeat;
+    padding: 2.25rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.numbers__list_item:nth-of-type(2n) {
+    background: url(../images/gold01.png) 50% 50% / cover no-repeat;
+}
+
+.numbers__content_h2,
+.numbers__content_h3,
+.numbers__content_p {
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0, 0, 0, 0.25));
+}
+
+.numbers__list_quantity {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0, 0, 0, 0.25));
+}
+
+.numbers__quantity_top {
+    font: 700 6.25rem / 1 'Montserrat', sans-serif;
+}
+
+.numbers__quantity_bottom {
+    font: 700 1.5rem / 1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: .25rem;
+    letter-spacing: .5em;
+}
+
+.numbers__list_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: .75rem;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0, 0, 0, 0.25));
+}
+
+.numbers__list_h4 {
+    font: 700 2.75rem / 1 'Montserrat', sans-serif;
+}
+
+.numbers__list_p {
+    font: 400 1.6rem / 1.4 'Montserrat', sans-serif;
+    margin-top: .75rem;
+}
+
+.ideation-page__developments_container {
+    justify-content: flex-end;
+}
+
+.ideation-page__developments_image {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    bottom: 0;
+    margin: auto;
+    height: 65rem;
+    width: 65rem;
+}
