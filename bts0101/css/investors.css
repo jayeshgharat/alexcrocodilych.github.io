@@ -4,6 +4,9 @@
     font-size: 4.5rem;
 }
 
+.p-text:first-of-type {
+    margin-top: 0;
+}
 
 .about-page__what {
     background: #fff;
@@ -19,7 +22,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    width: 50%;
     width: calc(50% - 3rem);
 }
 
@@ -39,8 +41,8 @@
 }
 
 .about-page__what_image {
-    height: 8rem;
-    width: 8rem;
+    height: 7rem;
+    width: 7rem;
     background: #000;
     transform: rotate(45deg);
     margin-top: 1.5rem;
@@ -51,15 +53,23 @@
 }
 
 .about-page__what_pic {
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     transform: rotate(-45deg);
     fill: #fff;
 }
 
+.about-page__what_item:nth-of-type(3) .about-page__what_pic {
+    transform: rotate(-90deg);
+}
+
+.about-page__what_item:nth-of-type(4) .about-page__what_pic {
+    transform: rotate(0deg);
+}
+
 .about-page__what_h4 {
     z-index: 2;
-    font: 700 1.7rem / 1 'Montserrat', sans-serif;
+    font: 700 2.2rem / 1 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin-top: 3.75rem;
 }
@@ -67,5 +77,5 @@
 .about-page__what_p {
     z-index: 2;
     margin-top: 1.5rem;
-    font: 400 1.3rem / 1.5 'Montserrat', sans-serif;
+    font: 400 1.4rem / 1.4 'Montserrat', sans-serif;
 }
