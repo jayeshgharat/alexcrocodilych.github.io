@@ -1,0 +1,74 @@
+/*      Careers Page      */
+
+.page-headline__h2 {
+    font-size: 4.5rem;
+}
+
+.p-text:first-of-type {
+    margin-top: 0;
+}
+
+.careers-page-why__list {
+    background: #fff;
+}
+
+.careers-page-why__container {
+    justify-content: space-between;
+}
+
+
+.careers-page-why__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 50%;
+    width: calc(50% - 3rem);
+}
+
+.careers-page-why__list_item {
+    width: calc(100% / 2 - 1rem);
+    height: calc(100% / 3 - 1.33rem);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    padding: 3rem;
+    background: url(../images/gold11.png) 50% 50% / cover no-repeat;
+    position: relative;
+}
+
+.careers-page-why__list_image {
+    height: 8rem;
+    width: 8rem;
+    background: #000;
+    transform: rotate(45deg);
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+}
+
+.careers-page-why__list_pic {
+    height: 4.75rem;
+    width: 4.75rem;
+    transform: rotate(-45deg);
+    fill: #fff;
+}
+
+.careers-page-why__list_h4 {
+    z-index: 2;
+    font: 700 1.6rem / 1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 3.75rem;
+}
+
+.careers-page-why__list_p {
+    z-index: 2;
+    margin-top: 1.5rem;
+    font: 400 1.5rem / 1.5 'Montserrat', sans-serif;
+}

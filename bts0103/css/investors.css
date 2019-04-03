@@ -1,0 +1,81 @@
+/*      About Page      */
+
+.page-headline__h2 {
+    font-size: 4.5rem;
+}
+
+.p-text:first-of-type {
+    margin-top: 0;
+}
+
+.about-page__what {
+    background: #fff;
+}
+
+.about-page__what_container {
+    justify-content: space-between;
+}
+
+
+.about-page__what_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: calc(50% - 3rem);
+}
+
+.about-page__what_item {
+    width: calc(100% / 2 - 1rem);
+    height: calc(100% / 2 - 1rem);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    padding: 3rem;
+    background: url(../images/gold11.png) 50% 50% / cover no-repeat;
+    position: relative;
+}
+
+.about-page__what_image {
+    height: 7rem;
+    width: 7rem;
+    background: #000;
+    transform: rotate(45deg);
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+}
+
+.about-page__what_pic {
+    height: 3.5rem;
+    width: 3.5rem;
+    transform: rotate(-45deg);
+    fill: #fff;
+}
+
+.about-page__what_item:nth-of-type(3) .about-page__what_pic {
+    transform: rotate(-90deg);
+}
+
+.about-page__what_item:nth-of-type(4) .about-page__what_pic {
+    transform: rotate(0deg);
+}
+
+.about-page__what_h4 {
+    z-index: 2;
+    font: 700 2.2rem / 1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 3.75rem;
+}
+
+.about-page__what_p {
+    z-index: 2;
+    margin-top: 1.5rem;
+    font: 400 1.4rem / 1.4 'Montserrat', sans-serif;
+}
