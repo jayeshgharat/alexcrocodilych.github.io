@@ -1,0 +1,13 @@
+/*      Privacy Policy Page      */
+
+.privacy-page-list__h4 {
+    font: 600 2rem / 1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    align-self: flex-start;
+    color: #aaa;
+    margin-bottom: 2rem;
+}
+
+.p-text-bold {
+    font-weight: 700;
+}
