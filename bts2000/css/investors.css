@@ -1,0 +1,55 @@
+/*      Investors Page      */
+
+.investors-page-what__list_item {
+    width: calc(100% / 2 - 1rem);
+    height: calc(100% / 2 - 1rem);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    background: #D9B854 url(../images/gold02.png) 50% 50% / cover no-repeat;
+}
+
+.investors-page-what__list_image {
+    height: 7rem;
+    width: 7rem;
+    margin-top: 1.5rem;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    background: #000;
+}
+
+.investors-page-what__list_pic {
+    height: 3.5rem;
+    width: 3.5rem;
+    transform: rotate(-45deg);
+    fill: #D9B854;
+}
+
+.investors-page-what__list_item:nth-of-type(3) .investors-page-what__list_pic {
+    transform: rotate(-90deg);
+}
+
+.investors-page-what__list_item:nth-of-type(4) .investors-page-what__list_pic {
+    transform: rotate(0);
+}
+
+.investors-page-what__list_h4 {
+    margin-top: 3.75rem;
+    font: 700 2.2rem / 1 'Montserrat', sans-serif;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0,0,0,.15));
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.investors-page-what__list_p {
+    margin-top: 1.5rem;
+    font: 400 1.4rem / 1.4 'Montserrat', sans-serif;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0,0,0,.15));
+    text-align: center;
+}

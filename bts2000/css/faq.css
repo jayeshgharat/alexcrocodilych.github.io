@@ -1,0 +1,69 @@
+/*      FAQ Page      */
+
+.faq-page-questions {
+    padding: 0 0 6rem;
+}
+
+.faq-page-questions__list {
+    width: 100%;
+    padding-left: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.faq-page-questions__list_item {
+    position: relative;
+    margin-top: 5rem;
+    padding: 4rem 4rem 4rem 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    border: .5rem solid #D9B854;
+    border-image: #D9B854 url(../images/gold02.png) 10%;
+    background: #fff;
+    color: #000;
+}
+
+.faq-page-questions__list_number {
+    position: absolute;
+    z-index: 2;
+    bottom: -2rem;
+    left: -3rem;
+    height: 12rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    background: #D9B854 url(../images/gold02.png) 50% 50% / cover no-repeat;
+}
+
+.faq-page-questions__list_item:nth-of-type(2n) .faq-page-questions__list_number {
+    background: #D9B854 url(../images/gold01.png) 50% 50% / cover no-repeat;
+}
+
+.faq-page-questions__list_quantity {
+    font: 800 7rem / 1.5 'Montserrat', sans-serif;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0,0,0,.15));
+    color: #000;
+}
+
+.faq-page-questions__list_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-page-questions__list_h4 {
+    font: 700 2.5rem / 1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.faq-page-questions__list_p {
+    margin-top: 2rem;
+    font: 300 2rem / 1.4 'Montserrat', sans-serif;
+    text-align: justify;
+}
