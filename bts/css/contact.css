@@ -1,0 +1,103 @@
+/*      Contact Page      */
+
+.contact-page-contact__content_link {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-out;
+}
+
+.contact-page-contact__content_link:hover {
+    color: #D9B854;
+}
+
+.contact-page-contact__link_image {
+    height: 5rem;
+    width: 5rem;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    background: #000;
+}
+
+.contact-page-contact__link_pic {
+    height: 2.5rem;
+    width: 2.5rem;
+    transform: rotate(-45deg);
+}
+
+.contact-page-contact__link_text {
+    margin-left: 4rem;
+    font: 400 4rem / 1 'Montserrat', sans-serif;
+}
+
+.contact-page-contact__form_item {
+    position: relative;
+    width: 100%;
+}
+
+.contact-page-contact__form_item:not(:first-of-type) {
+    margin-top: 2rem;
+}
+
+.contact-page-contact__form_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D9B854 url(../images/gold02.png) 50% 50% / cover no-repeat;
+    fill: #000;
+}
+
+.contact-page-contact__form_pic {
+    height: 2.75rem;
+    width: 2.75rem;
+}
+
+.contact-page-contact__form_input {
+    height: 5rem;
+    width: 100%;
+    padding: 0 2rem 0 6.5rem;
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    border: .15rem solid #d8d8d8;
+    font: 500 1.6rem / 1.4 'Montserrat', sans-serif;
+    color: #000;
+    transition: all .3s ease-out;
+}
+
+.contact-page-contact__form_input:focus {
+    border-color: #D9B854;
+}
+
+.contact-page-contact__form_input::-webkit-input-placeholder {
+    color: #bdbdbd;
+}
+
+.contact-page-contact__form_input::-moz-placeholder {
+    color: #bdbdbd;
+    opacity: 1;
+}
+
+.contact-page-contact__form_input:-ms-input-placeholder {
+    color: #bdbdbd;
+}
+
+.contact-page-contact__form_textarea {
+    height: 20rem;
+    padding-top: 1.75rem;
+    resize: none;
+}
+
+.contact-page-contact__form_button {
+    height: 5rem;
+    width: 100%;
+    margin-top: 2rem;
+}

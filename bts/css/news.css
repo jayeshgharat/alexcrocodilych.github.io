@@ -1,0 +1,100 @@
+/*      News Page      */
+
+.news-page-articles {
+    padding: 6rem 0;
+}
+
+.news-page-articles__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-page-articles__list_item {
+    display: flex;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+}
+
+.news-page-articles__list_item:not(:first-of-type) {
+    margin-top: 2rem;
+}
+
+.news-page-articles__list_image {
+    width: 35%;
+    flex-shrink: 0;
+    background: #b5b5b5;
+    font: 400 1.5rem / 10 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.news-page-articles__list_data {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.news-page-articles__data_date {
+    padding: 1.25rem 2rem;
+    background: #D9B854 url(../images/gold02.png) 50% 50% / cover no-repeat;
+    font: 700 1.6rem / 1 'Montserrat', sans-serif;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0,0,0,.15));
+    text-transform: uppercase;
+}
+
+.news-page-articles__data_h4 {
+    margin-top: 4rem;
+    font: 700 2.5rem / 1.2 'Montserrat', sans-serif;
+}
+
+.news-page-articles__data_p {
+    margin-top: 1.5rem;
+    font: 400 1.6rem / 1.5 'Montserrat', sans-serif;
+}
+
+.news-page-articles__data_link {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.news-page-articles__data_button {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1.25rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 400 2rem / 1 'Montserrat', sans-serif;
+}
+
+.news-page-articles__data_button .button__text {
+    font: 600 2.4rem / 1 'Montserrat', sans-serif;
+}
+
+.news-page-articles__data_text {
+    font: 600 1.3rem / 1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    transition: all .3s ease-out;
+}
+
+.news-page-articles__data_link:hover .news-page-articles__data_text {
+    color: #D9B854;
+}
+
+.news-page-articles__data_link:hover .button:before {
+    opacity: 1;
+}
+
+.news-page-articles__data_link:hover .button__text {
+    background: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.news-page-articles__button {
+    margin-top: 4rem;
+    align-self: center;
+}

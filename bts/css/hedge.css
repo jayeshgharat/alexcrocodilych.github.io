@@ -1,0 +1,120 @@
+/*      Hedge Fund Page      */
+
+.home__content {
+    align-items: center;
+    text-align: center;
+}
+
+.home__h2 {
+    font-size: 10.25rem;
+}
+
+.home__h3 {
+    font-size: 4.85rem;
+}
+
+.home__p {
+    width: 87%;
+    text-align-last: center;
+}
+
+.home__bg {
+    background: #272727 url(../images/hedge-fund-bg.png) 50% 50% / cover no-repeat;
+}
+
+.home__bg_video {
+    filter: brightness(55%)contrast(100%)grayscale(100);
+}
+
+.hedge-page-advantages__h3 {
+    margin-top: -1.25rem;
+    font: 700 4.4rem / 1.4 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hedge-page-advantages__list {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hedge-page-advantages__list_item {
+    width: calc(100% / 3 - 1.33rem);
+    margin-top: 2rem;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    background: #D9B854 url(../images/gold02.png) 50% 50% / cover no-repeat;
+}
+
+.hedge-page-advantages__list_image {
+    height: 12rem;
+    width: 12rem;
+    margin: 3rem 0;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    background: #000;
+    fill: #D9B854;
+}
+
+.hedge-page-advantages__list_pic {
+    height: 7rem;
+    width: 7rem;
+    transform: rotate(-45deg);
+}
+
+.hedge-page-advantages__list_h4 {
+    margin-top: 2.5rem;
+    font: 700 2.3rem / 1.4 'Montserrat', sans-serif;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0,0,0,.15));
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hedge-page-advantages__list_p {
+    margin-top: 1rem;
+    font: 400 1.6rem / 1.5 'Montserrat', sans-serif;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0,0,0,.15));
+    text-align: center;
+}
+
+.hedge-page-disclaimer {
+    padding-top: 0;
+}
+
+.hedge-page-disclaimer__container {
+    align-items: center;
+}
+
+.hedge-page-disclaimer__image {
+    height: 12rem;
+    width: 12rem;
+    margin: 3rem 10rem 3rem 2.5rem;
+    transform: rotate(45deg);
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    background: #000;
+    fill: #D9B854;
+}
+
+.hedge-page-disclaimer__pic {
+    height: 8rem;
+    width: 8rem;
+    transform: rotate(-45deg);
+}
+
+.hedge-page-disclaimer__h2 {
+    font: 600 1.9rem / 1.4 'Montserrat', sans-serif;
+    text-align: justify;
+}
