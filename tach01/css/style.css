@@ -1,0 +1,573 @@
+/*   My normalize   */
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.15;
+    font-size: 10px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    max-width: 100%;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #000;
+}
+
+a {
+    outline: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    -webkit-text-decoration-skip: objects;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+fieldset,
+iframe,
+input,
+optgroup,
+select,
+textarea,
+ul {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-transform: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+:invalid {
+    box-shadow: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+label:focus,
+label:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active,
+a:focus,
+a:active {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background: #D9B854;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 1.25rem;
+    border-left: .125rem solid #e9e9e9;
+    background-color: #ECEFF1;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: 0 0 .5rem rgba(0,0,0,.05), 0 .5rem 1rem rgba(0,0,0,.1);
+    background: #9E9E9E;
+    transition: all .3s ease-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: url(../images/gold02.png) 50% 50% / cover no-repeat;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.header {
+    flex-shrink: 0;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+/*      Content      */
+
+.container-image {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.image-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-contain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.container-row,
+.container-column {
+    position: relative;
+    z-index: 2;
+    width: 144rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+}
+
+.container-row {
+    justify-content: space-between;
+}
+
+.container-column {
+    flex-direction: column;
+}
+
+.section {
+    position: relative;
+    padding: 10rem 0;
+    background: #fff;
+}
+
+.anchor {
+    position: absolute;
+    top: -5rem;
+}
+
+.h2-headline {
+    font: 600 2.4rem / 1 'Good Times', sans-serif;
+    letter-spacing: .2em;
+}
+
+.h3-headline {
+    margin: 1rem 0 2rem;
+    background: #D9B854 url(../images/gold02.png) 50% 50% / cover no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font: 400 5rem / 1 'Good Times', sans-serif;
+    color: #D9B854;
+}
+
+.p-text {
+    margin-top: 2rem;
+    font: 400 2rem / 1.5 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.button {
+    position: relative;
+    height: 4.5rem;
+    padding: 0 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid #D9B854;
+    border-image: url(../images/gold01.png) 10%;
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #D9B854 url(../images/gold01.png) 50% 50% / cover no-repeat;
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+
+.button:hover:before {
+    opacity: 1;
+}
+
+.button__text {
+    background: #D9B854 url(../images/gold02.png) 50% 50% / cover no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font: 700 1.5rem / 1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #D9B854;
+    transition: all .3s ease-out;
+}
+
+.button:hover .button__text {
+    background: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem 0;
+    transform: translate3d(0,0,0);
+    transition: all .3s ease-out;
+}
+
+.header__fixed {
+    box-shadow: 0 0 .5rem rgba(0,0,0,.05), 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.header__container {
+    justify-content: space-between;
+}
+
+.logo__link {
+    height: 5rem;
+    transition: all .3s ease-out;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu_link {
+    display: flex;
+    font: 400 3rem / 1.5 'Montserrat', sans-serif;
+    transition: all .3s ease-out;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: #34353A url(../images/home-bg17.png) 50% 50% / cover no-repeat;
+}
+
+.home__h2 {
+    position: absolute;
+    top: 17.25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font: 600 3rem / 1 'Saira', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(to top, #5AFF15, #00B712);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(90, 255, 21, 0.25));
+    color: #b9b9b9;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+
+.home__arrow {
+    z-index: 10;
+}
+
+.home__arrow:hover + .home__h2 {
+    opacity: 1;
+}
+
+.item {
+    position: absolute;
+    top: 49%;
+    margin: auto;
+    width: 14rem;
+    text-align: center;
+    color: #b9b9b9;
+}
+
+.item__h4 {
+    font: 600 1.8rem / 1 'Saira', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    background: linear-gradient(to top, #F6F2F2, #D9D9D9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0,0,0,.25));
+    color: #b9b9b9;
+    
+}
+
+.item__h5 {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0.5rem;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: auto;
+    height: 6rem;
+    width: 6rem;
+    font: 600 4rem / 1 'Saira', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    -webkit-filter: drop-shadow(.05em .05em .1em rgba(0,0,0,.25));
+    color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .25;
+    transition: color 2s ease-out, opacity 2s ease-out;
+}
+
+.item:hover .item__h5 {
+    opacity: 1;
+}
+
+.item01:hover .item__h5 {
+    color: #4bff00;
+}
+
+.item02:hover .item__h5 {
+    color: #F5D020;
+}
+
+.item03:hover .item__h5 {
+    color: #00d2ff;
+}
+
+.item04:hover .item__h5 {
+    color: #A4508B;
+}
+
+.item01 {
+    left: 0;
+    right: 58.5%;
+}
+
+.item02 {
+    left: 0;
+    right: 39.5%;
+}
+
+.item03 {
+    right: 0;
+    left: 39.5%;
+}
+
+.item04 {
+    right: 0;
+    left: 58.5%;
+}
+
+.home__arrow {
+    position: absolute;
+    z-index: 100;
+    height: 40rem;
+    width: 40rem;
+    top: 12.25%;
+    right: 0;
+    bottom: 0;
+    left: 2%;
+    margin: auto;
+    background: url(../images/home04.png) 50% 50% / contain no-repeat;
+    transform-origin: 50% 50%;
+    animation: drive02 2.5s normal forwards ease-in-out;
+    transform: rotate(0);
+    transition: all 5s ease-out;
+}
+
+.home__arrow:hover {
+    transform: rotate(140deg)
+}
+
+.item__gauge {
+    position: relative;
+    display: flex;
+    height: 14rem;
+    width: 14rem;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.item__gauge:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../images/gauge05.png) 50% 50% / contain no-repeat;
+}
+
+.chart {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.chart svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.outer {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    stroke-width: 20;
+    transition: stroke-dashoffset 4s;
+}
+
+.item01 .outer {
+    stroke: url(#Gradient1);
+}
+
+.item02 .outer {
+    stroke: url(#Gradient2);
+}
+
+.item03 .outer {
+    stroke: url(#Gradient3);
+}
+
+.item04 .outer {
+    stroke: url(#Gradient4);
+}
+
+.item__gauge:hover .outer {
+    stroke-dashoffset: 0;
+}
+
+@media screen and (max-width : 1680px) {
+    
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width : 1366px) {
+    
+    html {
+        font-size: 8.5px;
+    }
+}
+
+@media screen and (max-width : 1280px) {
+    
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    
+    html {
+        font-size: 6.3px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    
+    html {
+        font-size: 4.5px;
+    }
+    
+    .home {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width : 640px) {
+   
+    html {
+        font-size: 4px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+   
+    html {
+        font-size: 2.9px;
+    }
+    
+    .home {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width : 420px) {
+   
+    html {
+        font-size: 2.3px;
+    }
+}
+
+@media screen and (max-width : 320px) {
+   
+    html {
+        font-size: 2px;
+    }
+}
