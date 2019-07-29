@@ -1212,7 +1212,7 @@ section {
 
 .categories__content_link {
     background: #fff;
-    padding: 3rem 3rem;
+    padding: 3rem 2rem 3rem;
     transition: all .3s ease-out;
     align-items: center;
     text-align: center;
@@ -1224,8 +1224,8 @@ section {
 
 
 .categories__content_image {
-    height: 18rem;
-    width: 18rem;
+    height: 14rem;
+    width: 14rem;
     position: relative;
     overflow: visible;
 }
@@ -1234,8 +1234,8 @@ section {
 .categories__content_image:before {
     content: '';
     position: absolute;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     right: 0;
     bottom: -5rem;
     left: 0;
@@ -1256,7 +1256,7 @@ section {
 }
 
 .categories__content_h4 {
-    font: 700 1.8rem / 1 'Nunito Sans', sans-serif;
+    font: 700 1.5rem / 1 'Nunito Sans', sans-serif;
     text-align: center;
     margin-top: 8rem;
     transition: all .3s ease-out;
@@ -1264,9 +1264,9 @@ section {
 }
 
 .categories__content_h5 {
-    font: 700 5rem / .75 'Josefin Sans', sans-serif;
+    font: 700 4rem / .75 'Josefin Sans', sans-serif;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     color: #000;
     transition: all .3s ease-out;
     
@@ -1275,11 +1275,11 @@ section {
 .categories__content_info {
     display: flex;
     flex-direction: column;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 
 .categories__info_item {
-    font: 300 1.6rem / 1 'Nunito Sans', sans-serif;
+    font: 300 1.3rem / 1 'Nunito Sans', sans-serif;
     text-align: center;
     color: #545454;
 }
@@ -1291,11 +1291,16 @@ section {
 .categories__content_choose {
     display: flex;
     margin-top: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    right: 3rem;
+    justify-content: space-between;
 }
 
 .categories__content_icon {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     fill: transparent;
     transition: all .3s ease-out;
     transform: translate3d(0,0,0);
