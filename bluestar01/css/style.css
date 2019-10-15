@@ -577,7 +577,9 @@ section {
 }
 
 .home-top__bg_video {
-    filter: grayscale(100%)brightness(25%)
+    object-fit: cover;
+    width: 100%;
+    filter: grayscale(100%)brightness(25%);
 }
 
 .home-what {
