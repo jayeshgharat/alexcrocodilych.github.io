@@ -910,7 +910,7 @@ blockquote {
     font: 700 1.8rem / 1 'Gilroy', sans-serif;
     text-transform: uppercase;
     color: #fff;
-    box-shadow: 0 0rem 2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
     transition: all .3s ease-out;
 }
 
