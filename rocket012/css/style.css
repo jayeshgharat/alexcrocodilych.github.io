@@ -651,6 +651,10 @@ blockquote {
     width: calc(52.5% - 2rem);
     display: flex;
     justify-content: space-between;
+
+
+
+    
 }
 
 .home-testimonials__list_item {
