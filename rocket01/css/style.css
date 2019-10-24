@@ -353,6 +353,8 @@ blockquote {
     font: 700 1.6rem / 1 'Roboto', sans-serif;
     color: #fff;
     transition: all .3s ease-out;
+
+    
 }
 
 .header__menu_button:hover {
@@ -367,9 +369,6 @@ blockquote {
     color: #fff;
     background: #000 url(../images/home-top__bg12.png) 0% 50% / cover no-repeat;
     overflow: hidden;
-
-
-    
 }
 
 .home-top__container {
