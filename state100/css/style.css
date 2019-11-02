@@ -461,21 +461,20 @@ blockquote {
 
 .home-top__content_wrapper {
     position: relative;
-    padding-top: 1rem;
     display: flex;
 }
 
 .home-top__content_h3 {
     margin-left: -.06em;
-    font: 700 18.35rem / .75 'Gilroy', sans-serif;
+    font: 700 18.35rem / .9 'Gilroy', sans-serif;
     text-transform: uppercase;
-    color: var(--main-color);
+/*    color: var(--main-color);*/
 }
 
 .home-top__wrappet_bg {
     position: absolute;
-    top: 1.85rem;
-    bottom: 0;
+    top: 2.2rem;
+    bottom: 1.4rem;
     right: calc(100% + 2rem);
     width: 50vw;
     max-width: none;
@@ -483,7 +482,7 @@ blockquote {
 }
 
 .home-top__p {
-    margin-top: 6rem;
+    margin-top: 5rem;
     font: 400 3.5rem / 1.25 'Gilroy', sans-serif;
     text-align: justify;
     text-align-last: justify;
