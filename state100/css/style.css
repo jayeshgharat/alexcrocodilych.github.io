@@ -129,6 +129,7 @@ ul {
 input:not([type=checkbox]):not([type=radio]),
 textarea,
 select {
+    border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -465,17 +466,17 @@ blockquote {
 }
 
 .home-top__content_h3 {
-     margin-left: -.06em;
-    font: 700 18.35rem / .7 'Gilroy', sans-serif;
+    margin-left: -.06em;
+    font: 700 18.35rem / .75 'Gilroy', sans-serif;
     text-transform: uppercase;
     color: var(--main-color);
 }
 
 .home-top__wrappet_bg {
     position: absolute;
-    top: .25rem;
+    top: .85rem;
+    bottom: 0;
     right: calc(100% + 2rem);
-    height: 100%;
     width: 50vw;
     max-width: none;
     background: var(--main-color);
