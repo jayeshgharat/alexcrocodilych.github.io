@@ -465,7 +465,7 @@ blockquote {
 }
 
 .home-top__content_h3 {
-    margin-top: 1rem;
+    padding-top: 1rem;
     margin-left: -.06em;
     font: 700 18.35rem / .75 'Gilroy', sans-serif;
     text-transform: uppercase;
@@ -753,7 +753,6 @@ blockquote {
     margin-left: 7.5rem;
     display: flex;
     flex: 1 0 auto;
-    filter: drop-shadow(0 .75rem 2rem rgba(0,0,0,.15));
 }
 
 .home-subscribe__form_item {
@@ -768,6 +767,7 @@ blockquote {
     align-items: center;
     border: .3rem solid #fff;
     border-right: none;
+    box-shadow: 0 .75rem 2rem rgba(0,0,0,.15);
     background: #fff;
     font: 600 2rem / 1 'Gilroy', sans-serif;
     transition: all .3s ease-out;
@@ -794,6 +794,7 @@ blockquote {
 .home-subscribe__form_button {
     height: 6rem;
     padding: 0 3rem;
+    box-shadow: 0 .75rem 2rem rgba(0,0,0,.15);
     background: #000;
     font: 700 1.8rem / 1 'Gilroy', sans-serif;
     text-transform: uppercase;
