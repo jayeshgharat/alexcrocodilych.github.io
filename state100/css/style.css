@@ -461,11 +461,11 @@ blockquote {
 
 .home-top__content_wrapper {
     position: relative;
-    margin-top: 1rem;
     display: flex;
 }
 
 .home-top__content_h3 {
+    margin-top: 1rem;
     margin-left: -.06em;
     font: 700 18.35rem / .75 'Gilroy', sans-serif;
     text-transform: uppercase;
@@ -474,7 +474,7 @@ blockquote {
 
 .home-top__wrappet_bg {
     position: absolute;
-    top: .85rem;
+    top: 1.85rem;
     bottom: 0;
     right: calc(100% + 2rem);
     width: 50vw;
