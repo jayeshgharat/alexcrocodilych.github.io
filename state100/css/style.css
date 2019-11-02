@@ -461,11 +461,11 @@ blockquote {
 
 .home-top__content_wrapper {
     position: relative;
+    padding-top: 1rem;
     display: flex;
 }
 
 .home-top__content_h3 {
-    padding-top: 1rem;
     margin-left: -.06em;
     font: 700 18.35rem / .75 'Gilroy', sans-serif;
     text-transform: uppercase;
