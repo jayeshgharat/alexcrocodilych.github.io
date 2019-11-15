@@ -205,7 +205,6 @@ blockquote {
 .section {
     position: relative;
     padding: 7.5rem 0;
-    overflow: hidden;
 }
 
 .anchor {
@@ -442,9 +441,10 @@ blockquote {
     height: 100vh;
     padding: 0;
     display: flex;
-    background: 
-        url(../images/home-top__bg.png) 0 75% no-repeat,
-        #000 url(../images/home-top__bg.webp) 0 75% no-repeat ;
+    background:
+        url(../images/home-top__bg.webp) 0 50% no-repeat,
+        #000 url(../images/home-top__bg.png) 0 50% no-repeat;
+    background-size: cover;
 }
 
 .home-top__container {
@@ -500,32 +500,38 @@ blockquote {
     margin-top: 7.5rem;
 }
 
-.home-about__container:before {
+.home-about:before {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 7.5rem;
-    right: 2rem;
-    bottom: 7.5rem;
+    top: 15rem;
+    left: 0;
+    bottom: 15rem;
     width: calc(50vw + (var(--container-width) / 2 - 2.6125rem));
     max-width: none;
-    background: #D0D0CE url(../images/home-about__bg.png) 0 50% / cover no-repeat;
+    background:
+        url(../images/home-about__bg.webp) 0 50% no-repeat,
+        #D0D0CE url(../images/home-about__bg.png) 0 50% no-repeat;
+    background-size: cover;
 }
 
 .home-about__button {
     margin-top: 3.75rem;
 }
 
-.home-services__container:after {
+.home-services:after {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 7.5rem;
-    left: calc((100% - 2rem) * .8 + 3rem);
-    bottom: 0rem;
-    width: calc(50vw - (var(--container-width) * 0.2 + 16.45rem));
+    top: 15rem;
+    right: 0;
+    bottom: 7.5rem;
+    width: calc((100vw - 1.25rem) / 2 - ((var(--container-width) * .5) - (var(--container-width) * .2015)) - 2rem);
     max-width: none;
-    background: #D0D0CE url(../images/home-advantages__bg.png) 0% 50% / cover no-repeat;
+    background:
+        url(../images/home-services__bg.webp) 0 50% no-repeat,
+        #D0D0CE url(../images/home-services__bg.png) 0 50% no-repeat;
+    background-size: cover;
 }
 
 .home-services__list {
@@ -578,16 +584,19 @@ blockquote {
     font: 400 1.6rem / 1.5 var(--main-font);
 }
 
-.home-testimonials__container:before {
+.home-testimonials:before {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 7.5rem;
-    right: 2rem;
-    bottom: 7.5rem;
+    top: 15rem;
+    left: 0;
+    bottom: 15rem;
     width: calc(50vw + (var(--container-width) / 2 - 2.6125rem));
     max-width: none;
-    background: #D0D0CE url(../images/home-testimonials__bg.png) 50% 100% / cover no-repeat;
+    background:
+        url(../images/home-testimonials__bg.webp) 0 100% no-repeat,
+        #D0D0CE url(../images/home-testimonials__bg.png) 0 100% no-repeat;
+    background-size: cover;
 }
 
 .home-testimonials .h2-headline {
@@ -806,7 +815,7 @@ blockquote {
 }
 
 .home-partners__list_image {
-    height: 6rem;
+    height: 6.5rem;
     -webkit-filter: drop-shadow(.25rem .25rem .5rem rgba(0,0,0,.15));
     font: 600 2rem / 2.5 var(--main-font);
 }
@@ -835,13 +844,14 @@ blockquote {
 
 .home-subscribe__h3 {
     margin-top: 1.5rem;
-    font: 400 2.5rem / .7 var(--main-font);
+    font: 400 2.2rem / .7 var(--main-font);
 }
 
 .home-subscribe__form {
     margin-left: 7.5rem;
     display: flex;
-    flex: 1 0 auto;
+    flex-shrink: 0;
+    width: calc(40% + 7.5rem);
 }
 
 .home-subscribe__form_item {
@@ -857,7 +867,7 @@ blockquote {
     border: .3rem solid #fff;
     border-right: none;
     background: #fff;
-    font: 600 2rem / 1 var(--main-font);
+    font: 600 1.8rem / 1 var(--main-font);
     box-shadow: 0 0rem 2rem rgba(0,0,0,.15);
     transition: all .3s ease-out;
 }
@@ -889,7 +899,7 @@ blockquote {
     padding: 0 4rem;
     box-shadow: 0 0 2rem rgba(0,0,0,.15);
     background: #000;
-    font: 700 1.8rem / 1 var(--main-font);
+    font: 700 1.7rem / 1 var(--main-font);
     text-transform: uppercase;
     color: #fff;
     transition: all .3s ease-out;
