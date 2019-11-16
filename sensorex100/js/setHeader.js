@@ -1,3 +1,7 @@
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 var setHeader = function() {
 	var header = document.getElementsByClassName("header")[0];	
 	var headerTop = document.getElementsByClassName("header__logo_image")[0];
@@ -12,7 +16,3 @@ var setHeader = function() {
 }
 window.onscroll = setHeader;
 window.onload = setHeader;
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
