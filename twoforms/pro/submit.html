@@ -1,0 +1,143 @@
+@model ReviewCRM.Models.ContactManager
+
+@{
+Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>How did we do?</title>
+    @Scripts.Render("~/bundles/jquery")
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/Content/ReviewPage/rating.css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //  Check Radio-box
+            $(".rating input:radio").attr("checked", false);
+            $('.rating input').click(function () {
+                $(".rating span").removeClass('checked');
+                $(this).parent().addClass('checked');
+            });
+
+
+            $('input:radio').change(function () {
+                var userRating = this.value;
+                if (userRating == 1) {
+                    $('#ratingText').text("Poor");
+                }
+                if (userRating == 2) {
+                    $('#ratingText').text("Fair");
+                }
+                if (userRating == 3) {
+                    $('#ratingText').text("Average");
+                }
+                if (userRating == 4) {
+                    $('#ratingText').text("Good");
+                }
+                if (userRating == 5) {
+                    $('#ratingText').text("Excellent");
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body style="background-color: #F1F2F7; padding-top: 25px ">
+
+    <div class="col-sm-10 col-md-8 col-lg-6" style="float: none; margin: 0 auto; background-color: white; ">
+
+        <div class="row text-center">
+            <img alt="Company logo" src=@ViewBag.Logo
+                style="margin-top:20px; margin-bottom:20px; max-height: 150px; max-width: 200px; " />
+        </div>
+        <div class="row text-center">
+            <address style="margin-left: 10px; margin-right: 10px;"><strong>@ViewBag.Address</strong></address>
+
+        </div>
+
+        @Html.Raw(@ViewBag.PageText)
+
+        @using (Html.BeginForm())
+        {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+
+
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.Id)
+            @Html.HiddenFor(model => model.Prefix)
+            @Html.HiddenFor(model => model.FirstName)
+            @Html.HiddenFor(model => model.LastName)
+            @Html.HiddenFor(model => model.Email)
+            @Html.HiddenFor(model => model.Phone)
+            @Html.HiddenFor(model => model.DateCreated)
+            @Html.HiddenFor(model => model.OptOut)
+            @Html.HiddenFor(model => model.BusinessId)
+            @Html.HiddenFor(model => model.Guid)
+
+
+
+            <div class="row">
+                <div class="">
+                    <div class="form-group">
+
+                        <div class="rating" style="margin-left: 22px; margin-top: 10px; ">
+                            <span><input type="radio" name="rating" id="str5" value="5"><label
+                                    for="str5"></label></span>
+                            <span><input type="radio" name="rating" id="str4" value="4"><label
+                                    for="str4"></label></span>
+                            <span><input type="radio" name="rating" id="str3" value="3"><label
+                                    for="str3"></label></span>
+                            <span><input type="radio" name="rating" id="str2" value="2"><label
+                                    for="str2"></label></span>
+                            <span><input type="radio" name="rating" id="str1" value="1" required="required"><label
+                                    for="str1"></label></span>
+
+                        </div>
+
+                        <p id="ratingText" style="margin-top: 16px; margin-left: 180px; font-weight: bold">select rating
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Review" style="margin-left: 10px; margin-right: 10px">Review</label>
+                <div style=" margin:5px 0; padding-right:10px; padding-left: 10px; margin-bottom: 0px">
+                    <textarea class="form-control" name="Review" id="Review" required="required"
+                        style="height:300px; width: 100%; "></textarea>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <div class="">
+                    <input type="submit" value="Submit" class="btn btn-default"
+                        style="width: 100px; height: 50px; margin-left: 10px; margin-bottom: 15px" />
+                </div>
+            </div>
+        </div>
+        }
+
+    </div>
+
+    <script type="text/javascript">
+        $('textarea').bind('cut copy paste', function (e) {
+            e.preventDefault(); //disable cut,copy,paste
+        });
+    </script>
+
+
+
+</body>
+
+</html>
