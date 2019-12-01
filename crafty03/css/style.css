@@ -357,7 +357,7 @@ section {
 }
 
 .header__panel_link {
-    font: 600 1.6rem / 1 var(--font-first);
+    font: 500 1.6rem / 1 var(--font-first);
     color: #000;
     fill: transparent;
     display: flex;
@@ -370,8 +370,8 @@ section {
 }
 
 .header__panel_icon {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.2rem;
+    width: 2.2rem;
     margin-right: 1.5rem;
 }
 
@@ -498,7 +498,7 @@ section {
     align-items: center;
     height: 100%;
     padding: 0 2rem;
-    font: 700 1.2rem / .8 var(--font-first);
+    font: 600 1.2rem / .8 var(--font-first);
     letter-spacing: .05em;
     color: #000;
     transition: all .3s ease-out;
@@ -640,7 +640,7 @@ section {
 }
 
 .promition__banner_h2 {
-    font: 700 4.5rem / .8 var(--font-first);
+    font: 900 4.75rem / .8 var(--font-first);
     text-transform: uppercase;
     color: #fff;
     text-shadow: .025em .025em .1em rgba(92, 47, 16, 0.5);
@@ -665,20 +665,21 @@ section {
 .promition__banner_h3 {
     font: 700 5.4rem / .8 var(--font-first);
     text-transform: uppercase;
+    text-shadow: .025em .025em .1em rgba(92, 47, 16, 0.5);
     margin-top: 3rem;
 }
 
 .promition__banner01_p {
-    font: 500 2.5rem / 1.5 var(--font-first);
+    font: 300 2.65rem / 1.5 var(--font-first);
     z-index: 2;
 }
 
 .promition__banner01_link {
-    font: 700 1.8rem / 1 var(--font-first);
+    font: 600 1.8rem / 1 var(--font-first);
     color: #795548;
     align-self: flex-start;
     text-transform: uppercase;
-    border: .25rem solid #795548;
+    border: .2rem solid #795548;
     transition: all .3s ease-out;
     height: 5rem;
     display: flex;
@@ -726,7 +727,7 @@ section {
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 2rem;
+    right: 1rem;
     height: 80%;
     width: 100%;
     background: url(../images/banner02.png) 100% 100% / contain no-repeat;
@@ -745,8 +746,8 @@ section {
     content: '';
     position: absolute;
     top: 0;
-    bottom: -30%;
-    right: -6rem;
+    bottom: -40%;
+    right: -7rem;
     margin: auto;
     height: 80%;
     width: 100%;
@@ -766,7 +767,7 @@ section {
 }
 
 .promition__banner_h4 {
-    font: 700 2rem / .75 var(--font-first);
+    font: 900 2.25rem / .75 var(--font-first);
     text-transform: uppercase;
     color: #fff;
     text-shadow: .025em .025em .05em #039BE5;
@@ -784,7 +785,7 @@ section {
     position: absolute;
     z-index: -1;
     top: -.5rem;
-    right: -5rem;
+    right: -4rem;
     height: 5rem;
     width: 200%;
     max-width: none;
@@ -793,7 +794,7 @@ section {
 }
 
 .promition__banner03 .promition__banner_h4 {
-    font: 700 2rem / .75 var(--font-first);
+    font: 900 2.25rem / .75 var(--font-first);
     text-shadow: .025em .025em .05em #C2185B;
     -webkit-filter: drop-shadow(.25rem .25rem .5rem rgba(168, 119, 104, 0.3));
 }
@@ -832,7 +833,7 @@ section {
 }
 
 .promition__banner_p {
-    font: 600 1.7rem / 1 var(--font-first);
+    font: 300 1.75rem / 1 var(--font-first);
     color: #000;
     margin-top: 3.5rem;
     text-align: center;
@@ -840,11 +841,11 @@ section {
 }
 
 .promition__banner_link {
-    font: 700 1.4rem / 1 var(--font-first);
+    font: 600 1.4rem / 1 var(--font-first);
     color: #4FC3F7;
     align-self: flex-start;
     text-transform: uppercase;
-    border: .25rem solid #4FC3F7;
+    border: .15rem solid #4FC3F7;
     transition: all .3s ease-out;
     height: 4rem;
     display: flex;
@@ -909,7 +910,7 @@ section {
 }
 
 .footer__advantages_p {
-    font: 500 1.7rem / 1 var(--font-first);
+    font: 300 1.8rem / 1 var(--font-first);
     margin-top: .85rem;
 }
 
@@ -1015,7 +1016,7 @@ section {
 }
 
 .section__title_link {
-    font: 700 1.5rem / 1 var(--font-first);
+    font: 600 1.5rem / 1 var(--font-first);
     color: var(--color-second);
     fill: #fff;
     transition: all .3s ease-out;
@@ -1025,7 +1026,7 @@ section {
     text-transform: uppercase;
     height: 4.5rem;
     padding: 0 2.5rem;
-    border: .25rem solid var(--color-second);
+    border: .15rem solid var(--color-second);
     
 }
 
@@ -1115,7 +1116,7 @@ section {
 }
 
 .categories__content_p {
-    font: 600 1.6rem / 1.4 var(--font-first);
+    font: 400 1.5rem / 1.4 var(--font-first);
     text-align: center;
     color: #545454;
     margin-top: 2rem;
@@ -1192,13 +1193,14 @@ section {
     font: 700 4.6rem / .75 var(--font-first);
     text-align: center;
     text-transform: uppercase;
+    transform: translateX(.115em);
     z-index: 2;
     margin-top: .75rem;
     color: #0c60d4;
 }
 
 .banner__p {
-    font: 600 3.4rem / 1.25 var(--font-first);
+    font: 400 3.5rem / 1.25 var(--font-first);
     margin-top: 2rem;
     z-index: 2;
     color: #0c60d4;
@@ -1345,7 +1347,7 @@ section {
 .footer__bottom_h4 {
     display: flex;
     align-items: center;
-    font: 600 1.7rem / 1.5 var(--font-first);
+    font: 500 1.8rem / 1.5 var(--font-first);
     transition: all .3s ease-out;
 }
 
@@ -1413,9 +1415,9 @@ a:hover .footer__p {
     height: 4.5rem;
     width: 26rem;
     padding: 0 4rem 0 1.75rem;
-    border: .2rem solid #000;
+    border: .15rem solid #000;
     border-right: none;
-    font: 600 1.6rem / 1 var(--font-first);
+    font: 500 1.6rem / 1 var(--font-first);
     color: var(--color-second);
     transition: all .3s ease-out;
 }
