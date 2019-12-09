@@ -1,0 +1,147 @@
+/*   Additional Pages   */
+
+.main {
+    padding-top: 11rem;
+}
+
+.page-top {
+    position: relative;
+}
+
+.page-top:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:
+        url(../images/home-about__bg.webp) 0 50% no-repeat,
+        #000 url(../images/home-about__bg.png) 0 55% no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+.page-top__container {
+    height: 30rem;
+    justify-content: center;
+}
+
+.page-top .h2-headline {
+    color: #fff;
+}
+
+.page-products__title {
+    padding: 3rem;
+    box-shadow: var(--shadow-content);
+    background: var(--color-fourth);
+    color: #fff;
+}
+
+.page-products__title:not(:first-of-type) {
+    margin-top: 3rem;
+}
+
+.page-products__title_h3 {
+    font: 700 2.5rem / 1.25 var(--font-first);
+}
+
+.page-products__title_p {
+    margin-top: 1rem;
+    font: 400 2.5rem / 1.25 var(--font-first);
+}
+
+.page-products__item {
+    display: flex;
+    box-shadow: var(--shadow-content);
+    margin-top: 3rem;
+}
+
+.page-products__item:nth-of-type(2n) .page-products__image{
+    order: 2;
+}
+
+.page-products__image {
+    position: relative;
+    width: 40%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.home-projects__list_picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    transition: all .3s ease-out;
+}
+
+.page-products__image:hover .home-projects__list_picture {
+    transform: scale(1.15);
+}
+
+.page-products__info {
+    background: #f5f5f5;
+    width: 60%;
+}
+
+.page-products__h4 {
+    font: 700 2.5rem / 1.25 var(--font-first);
+    padding: 3rem 7.5rem;
+}
+
+.page-products__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-products__list_item {
+    display: flex;
+    color: #000;
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem 7.5rem;
+}
+
+.page-products__list_item:nth-last-of-type(2n+1):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-width: none;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.page-products__list_title {
+    font: 400 1.8rem / 1.25 var(--font-first);
+    width: 35%;
+    flex-shrink: 0;
+}
+
+.page-products__list_text {
+    font: 600 1.8rem / 1.25 var(--font-first);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
