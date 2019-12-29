@@ -429,7 +429,7 @@ blockquote {
     height: 3rem;
     width: 3rem;
     transform-origin: 50% 50%;
-    animation: ball-move01 1s linear infinite, ball-move02 10s forwards linear 2s;
+    animation: ball-move02 10s forwards linear 2s, ball-move01 1s linear infinite;
 }
 
 @keyframes ball-move01 {
