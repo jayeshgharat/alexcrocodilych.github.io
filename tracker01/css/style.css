@@ -428,8 +428,7 @@ blockquote {
     right: 6.5%;
     height: 3rem;
     width: 3rem;
-    transform-origin: 50% 50%;
-    animation: ball-move02 10s forwards linear 2s, ball-move01 1s linear infinite;
+    animation: ball-move01 1s linear infinite, ball-move02 10s forwards linear 2s;
 }
 
 @keyframes ball-move01 {
