@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Feedback Eagle</title>
+    <link rel="icon" href="images/logo-mini.png" type="image/png">
+    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" as="font" crossorigin>
+    <link rel="preload" href="js/aos.js" as="script">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="aside">
+        <h1 class="aside__logo" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="2500">
+            <a href="#" title="Go to Home Page" class="aside__logo_link">
+                <picture class="aside__logo_picture picture">
+<!--                        <source srcset="images/logo.webp" type="image/webp">-->
+                    <img src="images/logo01.png" alt="Site" class="image-contain">
+                </picture>
+            </a>
+        </h1>
+        <nav class="aside__nav">
+            <ul class="aside__menu">
+                <li class="aside__menu_item">
+                    <a href="#" class="aside__menu_link">
+                        <svg style="display:none" class="aside__menu_icon">
+                            <use xlink:href="icons/icons.svg#aside-menu01" />
+                        </svg>
+                        <span class="aside__menu_text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="aside__menu_item">
+                    <a href="#" class="aside__menu_link">
+                        <svg style="display:none" class="aside__menu_icon">
+                            <use xlink:href="icons/icons.svg#aside-menu02" />
+                        </svg>
+                        <span class="aside__menu_text">New email campaign</span>
+                    </a>
+                </li>
+                <li class="aside__menu_item">
+                    <a href="#" class="aside__menu_link">
+                        <svg style="display:none" class="aside__menu_icon">
+                            <use xlink:href="icons/icons.svg#aside-menu03" />
+                        </svg>
+                        <span class="aside__menu_text">My email campaign</span>
+                    </a>
+                </li>
+                <li class="aside__menu_item">
+                    <a href="#" class="aside__menu_link">
+                        <svg style="display:none" class="aside__menu_icon">
+                            <use xlink:href="icons/icons.svg#aside-menu04" />
+                        </svg>
+                        <span class="aside__menu_text">My templates</span>
+                    </a>
+                </li>
+                <li class="aside__menu_item">
+                    <a href="#" class="aside__menu_link">
+                        <svg style="display:none" class="aside__menu_icon">
+                            <use xlink:href="icons/icons.svg#aside-menu05" />
+                        </svg>
+                        <span class="aside__menu_text">Sample templates</span>
+                    </a>
+                </li>
+                <li class="aside__menu_item">
+                    <a href="#" class="aside__menu_link">
+                        <svg style="display:none" class="aside__menu_icon">
+                            <use xlink:href="icons/icons.svg#aside-menu06" />
+                        </svg>
+                        <span class="aside__menu_text">Message</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="page-wrapper">
+        <header class="header">
+            <ul class="header__menu">
+                <li class="header__menu_item">
+                    <a href="#" class="header__menu_link">
+                        <svg style="display:none" class="header__menu_icon">
+                            <use xlink:href="icons/icons.svg#header-menu01" />
+                        </svg>
+                        <span class="header__menu_text">Feedback<br>emails</span>
+                    </a>
+                </li>
+                <li class="header__menu_item">
+                    <a href="#" class="header__menu_link">
+                        <svg style="display:none" class="header__menu_icon">
+                            <use xlink:href="icons/icons.svg#header-menu02" />
+                        </svg>
+                        <span class="header__menu_text">Reviews<br>Manager</span>
+                    </a>
+                </li>
+                <li class="header__menu_item">
+                    <a href="#" class="header__menu_link">
+                        <svg style="display:none" class="header__menu_icon">
+                            <use xlink:href="icons/icons.svg#header-menu03" />
+                        </svg>
+                        <span class="header__menu_text">Feedbak<br>manager</span>
+                    </a>
+                </li>
+                <li class="header__menu_item">
+                    <a href="#" class="header__menu_link">
+                        <svg style="display:none" class="header__menu_icon">
+                            <use xlink:href="icons/icons.svg#header-menu04" />
+                        </svg>
+                        <span class="header__menu_text">Orders<br>manager</span>
+                    </a>
+                </li>
+                <li class="header__menu_item">
+                    <a href="#" class="header__menu_link">
+                        <svg style="display:none" class="header__menu_icon">
+                            <use xlink:href="icons/icons.svg#header-menu05" />
+                        </svg>
+                        <span class="header__menu_text">Notification<br>manager</span>
+                    </a>
+                </li>
+                <li class="header__menu_item">
+                    <a href="#" class="header__menu_link">
+                        <svg style="display:none" class="header__menu_icon">
+                            <use xlink:href="icons/icons.svg#header-menu06" />
+                        </svg>
+                        <span class="header__menu_text">Reports<br>manager</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__panel">
+                <li class="header__panel_item">
+                    <ul class="header__panel_sublist">
+                        <li class="header__sublist_item">
+                            <div class="header__sublist_flag">
+                                <svg style="display:none" class="header__sublist_icon">
+                                    <use xlink:href="icons/icons.svg#header-flag01" />
+                                </svg>
+                            </div>
+                            <div class="header__sublist_text">(A255I34XR00IE)</div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__panel_item">
+                    <a href="#" class="header__panel_link">
+                        <svg style="display:none" class="header__panel_icon">
+                            <use xlink:href="icons/icons.svg#header-panel01" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__panel_item">
+                    <a href="#" class="header__panel_link">
+                        <picture class="header__panel_picture picture">
+            <!--                <source srcset="images/ralph01.webp" type="image/webp">-->
+                            <img src="images/ralph01.png" alt="" class="image-cover">
+                        </picture>
+                        <span class="header__menu_text">Demo user</span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <section class="sales-overview section">
+                <div class="greeting box1-2 box">
+                    <h2 class="greeting__h2">Welcome back!</h2>
+                    <p class="greeting__p">Here's what's happening with your Emails and Feedback today!</p>
+                </div>
+                <div class="plan box1-2">
+                    <div class="box__top">
+                        <h2 class="h2-headline">Current billing plan</h2>
+                    </div>
+                    <div class="sales-overview__box box">
+                        <h4 class="box__h4">Email usage</h4>
+                        <div class="sales-overview__scale">
+                            <div class="sales-overview__scale_amount">345/5000</div>
+                            <div class="sales-overview__scale_data">
+                                <div class="sales-overview__scale_percent">7%</div>
+                                <div class="sales-overview__scale_line"></div>
+                            </div>
+                        </div>
+                        <h5 class="box__h5">Your plan currently allows 5000 emails</h5>
+                        <a href="#" class="sales-overview__link">Manage plan</a>
+                    </div>
+                </div>
+            </section>
+            <section class="email-summary section">
+                <div class="box__top">
+                    <h2 class="h2-headline">Email & orders summary</h2>
+                    <form action="#" class="box__top_form">
+                        <fieldset class="box__form_item">
+                            <legend class="box__form_legend">Time period</legend>
+                            <div class="box__form_wrapper">
+                                <svg style="display:none;" class="box__form_icon">
+                                    <use xlink:href="icons/icons.svg#form-down" />
+                                </svg>
+                                <select name="" class="box__form_select">
+                                    <option value="Today" class="box__form_option">Today</option>
+                                    <option value="Yesterday" class="box__form_option">Yesterday</option>
+                                    <option value="7 Days" class="box__form_option">7 Days</option>
+                                    <option value="30 Days" class="box__form_option">30 Days</option>
+                                    <option value="12 Months" class="box__form_option">12 Months</option>
+                                    <option value="Year-To-Date" class="box__form_option">Year-To-Date</option>
+                                    <option value="Custom" class="box__form_option">Custom</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="box__form_item">
+                            <legend class="box__form_legend">Time breakdown</legend>
+                            <div class="box__form_wrapper">
+                                <svg style="display:none;" class="box__form_icon">
+                                    <use xlink:href="icons/icons.svg#form-down" />
+                                </svg>
+                                <select name="" class="box__form_select">
+                                    <option value="Today" class="box__form_option">By day</option>
+                                    <option value="Yesterday" class="box__form_option">Yesterday</option>
+                                    <option value="7 Days" class="box__form_option">Days DaysDays</option>
+                                    <option value="30 Days" class="box__form_option">30 Days</option>
+                                    <option value="12 Months" class="box__form_option">12 Months</option>
+                                    <option value="Year-To-Date" class="box__form_option">Year-To-Date</option>
+                                    <option value="Custom" class="box__form_option">Custom</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="box__form_item">
+                            <legend class="box__form_legend">Marketplace</legend>
+                            <div class="box__form_wrapper">
+                                <svg style="display:none;" class="box__form_icon">
+                                    <use xlink:href="icons/icons.svg#form-down" />
+                                </svg>
+                                <select name="" class="box__form_select">
+                                    <option value="Today" class="box__form_option">All marketplaces</option>
+                                    <option value="Yesterday" class="box__form_option">Yesterday</option>
+                                    <option value="7 Days" class="box__form_option">7 Days</option>
+                                    <option value="30 Days" class="box__form_option">30 Days</option>
+                                    <option value="12 Months" class="box__form_option">12 Months</option>
+                                    <option value="Year-To-Date" class="box__form_option">Year-To-Date</option>
+                                    <option value="Custom" class="box__form_option">Custom</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="email-summary__box">
+                    <ul class="email-summary__list">
+                        <li class="email-summary__list_item box">
+                            <div class="email-summary__list_image">
+                                <svg style="display:none;transform:scale(1.1)" class="email-summary__list_icon">
+                                    <use xlink:href="icons/icons.svg#email-summary01" />
+                                </svg>
+                            </div>
+                            <div class="email-summary__list_title">
+                                <div class="email-summary__list_amount">1200</div>
+                                <h4 class="email-summary__list_h4">Total emails sent</h4>
+                            </div>
+                        </li>
+                        <li class="email-summary__list_item box">
+                            <div class="email-summary__list_image">
+                                <svg style="display:none" class="email-summary__list_icon">
+                                    <use xlink:href="icons/icons.svg#email-summary02" />
+                                </svg>
+                            </div>
+                            <div class="email-summary__list_title">
+                                <div class="email-summary__list_amount">300</div>
+                                <h4 class="email-summary__list_h4">Total emails opened</h4>
+                            </div>
+                        </li>
+                        <li class="email-summary__list_item box">
+                            <div class="email-summary__list_image">
+                                <svg style="display:none" class="email-summary__list_icon">
+                                    <use xlink:href="icons/icons.svg#email-summary03" />
+                                </svg>
+                            </div>
+                            <div class="email-summary__list_title">
+                                <div class="email-summary__list_amount">25%</div>
+                                <h4 class="email-summary__list_h4">Open rate</h4>
+                            </div>
+                        </li>
+                        <li class="email-summary__list_item box">
+                            <div class="email-summary__list_image">
+                                <svg style="display:none" class="email-summary__list_icon">
+                                    <use xlink:href="icons/icons.svg#email-summary04" />
+                                </svg>
+                            </div>
+                            <div class="email-summary__list_title">
+                                <div class="email-summary__list_amount">5%</div>
+                                <h4 class="email-summary__list_h4">Unsubscribe rate</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="email-summary__info box">
+                        <picture class="email-summary__table picture">
+            <!--            <source srcset="images/table02.webp" type="image/webp">-->
+                            <img src="images/table02.png" alt="" class="image-contain">
+                        </picture>
+                        <ul class="email-summary__sublist">
+                            <li class="email-summary__sublist_item">
+                                <div class="email-summary__sublist_marker"></div>
+                                <div class="email-summary__sublist_text">Orders</div>
+                            </li>
+                            <li class="email-summary__sublist_item">
+                                <div class="email-summary__sublist_marker"></div>
+                                <div class="email-summary__sublist_text">Emails Sent</div>
+                            </li>
+                            <li class="email-summary__sublist_item">
+                                <div class="email-summary__sublist_marker"></div>
+                                <div class="email-summary__sublist_text">Emails Opened</div>
+                            </li>
+                            <li class="email-summary__sublist_item">
+                                <div class="email-summary__sublist_marker"></div>
+                                <div class="email-summary__sublist_text">Unsubscribed</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews-summary section">
+                <div class="box__top">
+                    <h2 class="h2-headline">Reviews summary</h2>
+                    <form action="#" class="box__top_form">
+                        <fieldset class="box__form_item">
+                            <legend class="box__form_legend">Time period</legend>
+                            <div class="box__form_wrapper">
+                                <svg style="display:none;" class="box__form_icon">
+                                    <use xlink:href="icons/icons.svg#form-down" />
+                                </svg>
+                                <select name="" class="box__form_select">
+                                    <option value="Today" class="box__form_option">Today</option>
+                                    <option value="Yesterday" class="box__form_option">Yesterday</option>
+                                    <option value="7 Days" class="box__form_option">7 Days</option>
+                                    <option value="30 Days" class="box__form_option">30 Days</option>
+                                    <option value="12 Months" class="box__form_option">12 Months</option>
+                                    <option value="Year-To-Date" class="box__form_option">Year-To-Date</option>
+                                    <option value="Custom" class="box__form_option">Custom</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="box__form_item">
+                            <legend class="box__form_legend">Time breakdown</legend>
+                            <div class="box__form_wrapper">
+                                <svg style="display:none;" class="box__form_icon">
+                                    <use xlink:href="icons/icons.svg#form-down" />
+                                </svg>
+                                <select name="" class="box__form_select">
+                                    <option value="Today" class="box__form_option">By day</option>
+                                    <option value="Yesterday" class="box__form_option">Yesterday</option>
+                                    <option value="7 Days" class="box__form_option">Days DaysDays</option>
+                                    <option value="30 Days" class="box__form_option">30 Days</option>
+                                    <option value="12 Months" class="box__form_option">12 Months</option>
+                                    <option value="Year-To-Date" class="box__form_option">Year-To-Date</option>
+                                    <option value="Custom" class="box__form_option">Custom</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="box__form_item">
+                            <legend class="box__form_legend">Marketplace</legend>
+                            <div class="box__form_wrapper">
+                                <svg style="display:none;" class="box__form_icon">
+                                    <use xlink:href="icons/icons.svg#form-down" />
+                                </svg>
+                                <select name="" class="box__form_select">
+                                    <option value="Today" class="box__form_option">All marketplaces</option>
+                                    <option value="Yesterday" class="box__form_option">Yesterday</option>
+                                    <option value="7 Days" class="box__form_option">7 Days</option>
+                                    <option value="30 Days" class="box__form_option">30 Days</option>
+                                    <option value="12 Months" class="box__form_option">12 Months</option>
+                                    <option value="Year-To-Date" class="box__form_option">Year-To-Date</option>
+                                    <option value="Custom" class="box__form_option">Custom</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="email-summary__box">
+                    <ul class="email-summary__list">
+                        <li class="email-summary__list_item box">
+                            <div class="email-summary__list_image">
+                                <svg style="display:none;" class="email-summary__list_icon">
+                                    <use xlink:href="icons/icons.svg#reviews-summary01" />
+                                </svg>
+                            </div>
+                            <div class="email-summary__list_title">
+                                <div class="email-summary__list_amount">789</div>
+                                <h4 class="email-summary__list_h4">Total reviews received</h4>
+                            </div>
+                        </li>
+                        <li class="email-summary__list_item box">
+                            <div class="email-summary__list_image">
+                                <svg style="display:none" class="email-summary__list_icon">
+                                    <use xlink:href="icons/icons.svg#reviews-summary02" />
+                                </svg>
+                            </div>
+                            <div class="email-summary__list_title">
+                                <div class="email-summary__list_amount">772</div>
+                                <h4 class="email-summary__list_h4">Positive reviews received</h4>
+                            </div>
+                        </li>
+                        <li class="email-summary__list_item box">
+                            <div class="email-summary__list_image">
+                                <svg style="display:none" class="email-summary__list_icon">
+                                    <use xlink:href="icons/icons.svg#reviews-summary03" />
+                                </svg>
+                            </div>
+                            <div class="email-summary__list_title">
+                                <div class="email-summary__list_amount">5</div>
+                                <h4 class="email-summary__list_h4">Neutral reviews received</h4>
+                            </div>
+                        </li>
+                        <li class="email-summary__list_item box">
+                            <div class="email-summary__list_image">
+                                <svg style="display:none" class="email-summary__list_icon">
+                                    <use xlink:href="icons/icons.svg#reviews-summary04" />
+                                </svg>
+                            </div>
+                            <div class="email-summary__list_title">
+                                <div class="email-summary__list_amount">12</div>
+                                <h4 class="email-summary__list_h4">Negative reviews received</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tables">
+                        <div class="tables__row">
+                            <div class="email-summary__info box2-3 box">
+                                <picture class="email-summary__table picture">
+                    <!--            <source srcset="images/table03.webp" type="image/webp">-->
+                                    <img src="images/table03.png" alt="" class="image-contain">
+                                </picture>
+                                <ul class="email-summary__sublist">
+                                    <li class="email-summary__sublist_item">
+                                        <div class="email-summary__sublist_marker"></div>
+                                        <div class="email-summary__sublist_text">Orders</div>
+                                    </li>
+                                    <li class="email-summary__sublist_item">
+                                        <div class="email-summary__sublist_marker"></div>
+                                        <div class="email-summary__sublist_text">Emails Sent</div>
+                                    </li>
+                                    <li class="email-summary__sublist_item">
+                                        <div class="email-summary__sublist_marker"></div>
+                                        <div class="email-summary__sublist_text">Emails Opened</div>
+                                    </li>
+                                    <li class="email-summary__sublist_item">
+                                        <div class="email-summary__sublist_marker"></div>
+                                        <div class="email-summary__sublist_text">Unsubscribed</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="email-summary__info box1-3 box">
+                                <picture class="email-summary__table picture">
+                    <!--            <source srcset="images/table05.webp" type="image/webp">-->
+                                    <img src="images/table05.png" alt="" class="image-contain">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="tables__row">
+                            <div class="email-summary__info box">
+                                <picture class="email-summary__table picture">
+                    <!--            <source srcset="images/table04.webp" type="image/webp">-->
+                                    <img src="images/table04.png" alt="" class="image-contain">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
