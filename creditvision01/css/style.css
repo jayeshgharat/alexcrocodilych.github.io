@@ -4,35 +4,35 @@
     font-family: 'GothamPro';
     font-style: normal;
     font-weight: 300;
-    src: url('/fonts/GothamPro-Light.woff2') format('woff2');
+    src: url('/fonts/GothamPro/GothamPro-Light.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'GothamPro';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/GothamPro-Regular.woff2') format('woff2');
+    src: url('/fonts/GothamPro/GothamPro-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'GothamPro';
     font-style: normal;
     font-weight: 500;
-    src: url('/fonts/GothamPro-Medium.woff2') format('woff2');
+    src: url('/fonts/GothamPro/GothamPro-Medium.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'GothamPro';
     font-style: normal;
     font-weight: 700;
-    src: url('/fonts/GothamPro-Bold.woff2') format('woff2');
+    src: url('/fonts/GothamPro/GothamPro-Bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'GothamPro';
     font-style: normal;
     font-weight: 900;
-    src: url('/fonts/GothamPro-Black.woff2') format('woff2');
+    src: url('/fonts/GothamPro/GothamPro-Black.woff2') format('woff2');
 }
 
 /*   My normalize   */
